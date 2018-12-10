@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:contentPlaceHolder id="seo" />
+    <vtex:metaTags/>
+    <vtex:template id="coty-head" />
+    <meta name="google-site-verification" content="VEjnqdlW6rtm8AkqGgbtSRCXEt9LxX1EWi6-89hfVME" />
+    <meta name="google-site-verification" content="3Ra02h8pS2qec6aUsA0zaIa03JQpO8xT3JkxC19eBFA" />
+</head>
+
+<body>
+
+    <div class="main">
+
+        <vtex:template id="coty-header" />
+
+        <div id="content" class="row-fluid">
+
+            <!-- Banner Principal -->
+            <div id="bannerPrincipal">
+                <div class="cotyDesk">
+                   <vtex:contentPlaceHolder id="Banner Principal" />
+                </div>
+                <div class="cotyMob">
+                   <vtex:contentPlaceHolder id="Banner Principal Mobile" />
+                </div>
+            </div>
+
+            <div class="container-center">
+
+	            <!-- Marcas -->
+	            <div class="logoMarcas">
+	                <h2>Nossas Marcas</h2>
+	                <vtex.cmc:logoMarcas />
+	                <vtex.cmc:logoMarcasDetalhes />
+	            </div>
+
+	            <!-- Banner Secundário -->
+	            <div class="bannerSecundario">
+	                <div class="cotyDesk">
+                       <vtex:contentPlaceHolder id="Banner Secundário" />
+                    </div>
+                    <div class="cotyMob">
+                       <vtex:contentPlaceHolder id="Banner Secundário Mobile" />
+                    </div>
+	            </div>
+
+	            <!-- Prateleira 01 -->
+	            <div class="prateleira prateleira01">
+	                <!-- <h2>Destaques</h2> -->
+	                <vtex:contentPlaceHolder id="Prateleira Destaques" />
+	            </div>
+
+	            <!-- Prateleira 01 -->
+	            <div class="prateleira prateleira02">
+	                <!-- <h2>Mais Populares</h2> -->
+	                <vtex:contentPlaceHolder id="Prateleira Mais Populares" />
+	            </div>
+
+	            <!-- Menu Categorias Mobile -->
+	            <div class="cotyMob customaMenu">
+	                <h2>Compre por Categoria</h2>
+	                <vtex.cmc:menuCategoriasMobile />
+	            </div>
+
+	        </div>
+
+            <!-- Prateleira 02 -->
+            <div class="prateleira prateleira02">
+            	<div class="container-center">
+            	    <div id="prateleiraEspecCor"><vtex:contentPlaceHolder id="Prateleira 02 - Especial - COR" /></div>
+            	    <div id="prateleiraEspecBanner">
+            	        <div class="cotyDesk">
+                           <vtex:contentPlaceHolder id="Prateleira 02 - Especial - BANNER DESKTOP" />
+                        </div>
+                        <div class="cotyMob">
+                           <vtex:contentPlaceHolder id="Prateleira 02 - Especial - BANNER MOBILE" />
+                        </div>
+            	    </div>
+                	<div id="prateleiraEspecColecao"><vtex:contentPlaceHolder id="Prateleira 02 - Especial - COLEÇÃO" /></div>
+               	</div>
+            </div>
+
+            <div class="container-center">
+
+	            <!-- Mosaico -->
+	            <div class="bannerMosaico">
+	                <vtex:contentPlaceHolder id="Mosaico Fotos" />
+	            </div>
+
+	            <!-- Prateleira 03 -->
+	            <!-- <div class="prateleira prateleira03">
+	            <h2>Fragrância</h2>
+	                <vtex:contentPlaceHolder id="Prateleira 03 - Fragrância" />
+	            </div> -->
+
+
+	            <!-- Prateleira 04 -->
+	            <!-- <div class="prateleira prateleira04">
+	            <h2>Protecao Solar</h2>
+	                <vtex:contentPlaceHolder id="Prateleira 04 - Protecao Solar" />
+	            </div> -->
+
+	            <!-- Prateleira 05 -->
+	            <!-- <div class="prateleira prateleira05">
+	            <h2>Saude Bucal</h2>
+	                <vtex:contentPlaceHolder id="Prateleira 05 - Saude Bucal" />
+	            </div> -->
+
+	            <!-- Prateleira 06 -->
+	            <!-- <div class="prateleira prateleira06">
+	            <h2>Unhas</h2>
+	                <vtex:contentPlaceHolder id="Prateleira 06 - Unhas" />
+	            </div> -->
+
+	            <!-- Prateleira 07 -->
+	            <!-- <div class="prateleira prateleira07">
+	            <h2>Kit Exclusivos</h2>
+	                <vtex:contentPlaceHolder id="Prateleira 07 - Kit Exclusivos" />
+	            </div> -->
+
+
+
+	            <!-- Instagram -->
+	            <div class="instagramMain">
+	                <vtex.cmc:instagramCoty />
+	            </div>
+
+	        </div>
+
+            <!-- Videos -->
+            <div class="videosHome">
+            	<div class="container-center">
+                	<vtex:contentPlaceHolder id="Videos" />
+                	<div id="videoShow">
+                    	<h2>Vídeos</h2>
+                    	<div id="areaVideo"></div>
+                    	<div id="areaTexto"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="listPrat"><vtex.cmc:GiftListInsertSkuV2 /></div>
+
+        </div>
+
+        <vtex:template id="coty-footer" />
+
+    </div>
+
+<vtex:template id="coty-scripts" />
+
+</body>
+</html>
