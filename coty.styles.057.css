@@ -11834,11 +11834,10 @@ body.coty-buscavazia #boxFiltros,
 		font-style: italic;
 	}
 
-    @media only screen and (max-width: 767px) {
-        /* esconde em item marcas'ver todos' quando estiver no mobile */
-        #menuList>ul>li.listDrop.itemMarcas .container-center .deptoPrinc {
-            display: none;
-        }
+
+    /* esconde em item marcas'ver todos'*/
+    #menuList>ul>li.listDrop.itemMarcas .container-center .deptoPrinc {
+        display: none;
     }
 
 	#menuList>ul>li.listDrop>a::after {
